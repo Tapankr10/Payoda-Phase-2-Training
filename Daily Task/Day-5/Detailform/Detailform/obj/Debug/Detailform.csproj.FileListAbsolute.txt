@@ -1,0 +1,10 @@
+C:\Users\tapan.k\Source\Repos\Detailform\Detailform\bin\Debug\Detailform.exe.config
+C:\Users\tapan.k\Source\Repos\Detailform\Detailform\bin\Debug\Detailform.exe
+C:\Users\tapan.k\Source\Repos\Detailform\Detailform\bin\Debug\Detailform.pdb
+C:\Users\tapan.k\Source\Repos\Detailform\Detailform\obj\Debug\Detailform.csproj.AssemblyReference.cache
+C:\Users\tapan.k\Source\Repos\Detailform\Detailform\obj\Debug\Detailform.Form1.resources
+C:\Users\tapan.k\Source\Repos\Detailform\Detailform\obj\Debug\Detailform.Properties.Resources.resources
+C:\Users\tapan.k\Source\Repos\Detailform\Detailform\obj\Debug\Detailform.csproj.GenerateResource.cache
+C:\Users\tapan.k\Source\Repos\Detailform\Detailform\obj\Debug\Detailform.csproj.CoreCompileInputs.cache
+C:\Users\tapan.k\Source\Repos\Detailform\Detailform\obj\Debug\Detailform.exe
+C:\Users\tapan.k\Source\Repos\Detailform\Detailform\obj\Debug\Detailform.pdb

@@ -1,0 +1,14 @@
+C:\Users\tapan.k\Source\Repos\DetailXml\DetailXml\bin\Debug\net8.0\DetailXml.exe
+C:\Users\tapan.k\Source\Repos\DetailXml\DetailXml\bin\Debug\net8.0\DetailXml.deps.json
+C:\Users\tapan.k\Source\Repos\DetailXml\DetailXml\bin\Debug\net8.0\DetailXml.runtimeconfig.json
+C:\Users\tapan.k\Source\Repos\DetailXml\DetailXml\bin\Debug\net8.0\DetailXml.dll
+C:\Users\tapan.k\Source\Repos\DetailXml\DetailXml\bin\Debug\net8.0\DetailXml.pdb
+C:\Users\tapan.k\Source\Repos\DetailXml\DetailXml\obj\Debug\net8.0\DetailXml.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tapan.k\Source\Repos\DetailXml\DetailXml\obj\Debug\net8.0\DetailXml.AssemblyInfoInputs.cache
+C:\Users\tapan.k\Source\Repos\DetailXml\DetailXml\obj\Debug\net8.0\DetailXml.AssemblyInfo.cs
+C:\Users\tapan.k\Source\Repos\DetailXml\DetailXml\obj\Debug\net8.0\DetailXml.csproj.CoreCompileInputs.cache
+C:\Users\tapan.k\Source\Repos\DetailXml\DetailXml\obj\Debug\net8.0\DetailXml.dll
+C:\Users\tapan.k\Source\Repos\DetailXml\DetailXml\obj\Debug\net8.0\refint\DetailXml.dll
+C:\Users\tapan.k\Source\Repos\DetailXml\DetailXml\obj\Debug\net8.0\DetailXml.pdb
+C:\Users\tapan.k\Source\Repos\DetailXml\DetailXml\obj\Debug\net8.0\DetailXml.genruntimeconfig.cache
+C:\Users\tapan.k\Source\Repos\DetailXml\DetailXml\obj\Debug\net8.0\ref\DetailXml.dll
