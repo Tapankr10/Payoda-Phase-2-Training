@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "dgSpecHash": "tkm0ib/LrxM=",
+  "success": false,
+  "projectFilePath": "C:\\Users\\tapan.k\\Source\\Repos\\SampleTest\\Test1\\Test1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tapan.k\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package NUnit.Analyzers. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "NUnit.Analyzers",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package NUnit. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "NUnit",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package NUnit3TestAdapter. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "NUnit3TestAdapter",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1103",
+      "level": "Error",
+      "message": "Unable to find a stable package Microsoft.NET.Test.Sdk with version (>= 17.8.0)\r\n  - Found 1 version(s) in Microsoft Visual Studio Offline Packages [ Nearest version: 17.10.0-preview-24080-01 ]\r\n  - Found 0 version(s) in C:\\Program Files\\dotnet\\library-packs",
+      "libraryId": "Microsoft.NET.Test.Sdk",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}
