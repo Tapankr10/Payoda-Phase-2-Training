@@ -1,0 +1,45 @@
+<h2><b> Shoes App</b></h2>
+
+
+
+<table class="table table-hover">
+<thead class="table-light">
+<tr>
+<th>ShoeId </th>
+<th>Shoe Name </th>
+<th> Shoe Brand</th>
+<th> Shoe stock</th>
+<th>Price </th>
+<th>Profile</th>
+<th>Action</th>
+
+</tr>
+</thead>
+<tbody>
+<tr *ngFor="let shoes of shoeDetail ">
+<td>{{shoes.ShoeId}}</td>
+<td>{{shoes.ShoeName}}</td>
+
+<td>{{shoes.ShoeBrand}}</td>
+<td>{{shoes.ShoeStock}}</td>
+
+<td>{{shoes.ShoePrice}}</td>
+<td> <img [src]="shoes.ShoeProfile" width="200px" alt="{{shoes.ShoeName}}"/></td>
+<td>
+    <button  class="btn btn-primary" (click)="addToCart(shoes.ShoeName)">Add to Cart</button>
+  
+ <!-- <button [disabled]="shoes.ShoeStock <= 0">Buy Now</button>-->
+ <button class="btn btn-primary"  style=" margin:5px"
+        [disabled]="shoes?.ShoeStock !== undefined && shoes.ShoeStock <= 0"
+        (click)="onBuyNow()">
+  Buy Now
+</button>
+
+
+
+
+
+  </td>
+</tr>
+</tbody>
+</table>
