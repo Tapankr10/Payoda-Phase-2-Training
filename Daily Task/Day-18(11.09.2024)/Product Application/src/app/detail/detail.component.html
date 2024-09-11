@@ -1,0 +1,75 @@
+<h2><b> Shoes App</b></h2>
+
+
+<label for="brand"  style="margin: 20px;">   <b>Filter by Brand:  </b>  </label>
+<select id="brand" [(ngModel)]="selectedBrand">
+  <option value="All">All</option>
+  <!-- Generate options based on available ShoeBrand dynamically -->
+  <option *ngFor="let brand of getUniqueBrands()" [value]="brand">{{ brand }}</option>
+</select>
+
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let shoes of getFilteredShoes()">
+      <div class="card">
+        <img [src]="shoes.ShoeProfile" class="card-img-top" [alt]="shoes.ShoeName" style="height: 250px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">{{shoes.ShoeName}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{shoes.ShoeBrand}}</h6>
+          <p class="card-text">
+            <span *ngIf="shoes.ShoeStock > 0; else outOfStock" class="text-success">In Stock</span>
+            <ng-template #outOfStock><span class="text-danger">Out of Stock</span></ng-template>
+          </p>
+          <p class="card-text" *ngIf="shoes.ShoeStock > 0; else noPrice">
+            Price: {{shoes.ShoePrice | currency}}
+          </p>
+          <ng-template #noPrice><p class="card-text">Price: N/A</p></ng-template>
+          <div class="d-flex justify-content-between">
+            <button class="btn btn-primary" (click)="addToCart(shoes)">Add to Cart</button>
+            <button class="btn btn-primary" [disabled]="shoes.ShoeStock <= 0" (click)="onBuyNow()">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<h3 class="mt-5 text-center">Your Cart</h3>
+<table *ngIf="cart.length > 0" class="table table-hover mt-4 border p-2">
+  <thead class="table-dark">
+    <tr>
+      <th>ShoeId</th>
+      <th>Shoe Name</th>
+      <th>Shoe Brand</th>
+      <th>Price</th>
+      <th> Image</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let shoe of cart">
+      <td>{{ shoe.ShoeId }}</td>
+      <td>{{ shoe.ShoeName }}</td>
+      <td>{{ shoe.ShoeBrand }}</td>
+      <td>{{ shoe.ShoePrice | currency }}</td>
+      
+      <td>
+       <img [src]="shoe.ShoeProfile" width="100px" alt="{{shoe.ShoeName}}"/>
+      </td>
+      <td>
+      
+        <button class="btn btn-danger" (click)="removeFromCart(shoe.ShoeId)">Remove</button>
+        
+        <button class="btn btn-success ms-2" (click)="onBuyNow()">Buy Now</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Display if the cart is empty -->
+<div *ngIf="cart.length === 0" class="alert alert-warning mt-4">
+  No items in the cart.
+</div>
+<app-add-shoe (shoeAdded)="addShoe($event)"></app-add-shoe>
