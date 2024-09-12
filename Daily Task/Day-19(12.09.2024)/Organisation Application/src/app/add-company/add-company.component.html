@@ -1,0 +1,26 @@
+<p>add-company works!</p>
+<!--<form (ngSubmit)="onSubmit()">
+    <div class="from-group">
+<label for> Company Name  </label>
+<input type=" text" class="from-control" id ="CompanyName" [(ngModel)]=" company.name">
+ </div>
+ <button type="submit" class="btn btn-primary">Add Company</button>
+</form>-->
+<div class="container d-flex justify-content-center">
+    <div class="card p-4 shadow-lg" style="width: 400px; border: 2px solid #ccc;">
+      <h2 class="text-center mb-4">Add Company</h2>
+      <form [formGroup]="companyForm" (ngSubmit)="addCompany()">
+        <div class="form-group">
+          <label for="name">Company Name:</label>
+          <input id="name" type="text" formControlName="name" class="form-control">
+          <div *ngIf="companyForm.get('name')?.invalid && companyForm.get('name')?.touched" class="text-danger">
+            Company Name is required.
+          </div>
+        </div>
+  
+        <button type="submit" class="btn btn-primary btn-block" [disabled]="companyForm.invalid">Add Company</button>
+      </form>
+    </div>
+  </div>
+  
+  

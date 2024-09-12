@@ -1,0 +1,20 @@
+<p>org-list works!</p>
+<!--<ul class="list-group border">
+    <li *ngFor="let lstcompany of data" class="list-group-item text-center">
+      {{lstcompany.id}} {{lstcompany.name}}
+    </li>
+  </ul>-->
+  <table class="table table-bordered table-hover"  style="margin:50px ; width: 50%;">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let lstcompany of data">
+        <td>{{lstcompany.id}}</td>
+        <td>{{lstcompany.name}}</td>
+      </tr>
+    </tbody>
+  </table>
